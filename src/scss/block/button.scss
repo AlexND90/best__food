@@ -1,0 +1,24 @@
+$bt-page_color: #fff;
+$bt-page_bgcolor: #FF7400;
+
+button {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.bt {
+    color: $bt-page_color;
+}
+.bt__nav {
+
+}
+
+.bt-page {
+    background-color: $bt-page_bgcolor;
+    padding: 15px 20px;
+}
+.bt__view {
+    padding: 15px 28px;
+}

@@ -1,3 +1,37 @@
-p {
+.header__block {
+    background-image: url("/img/bg/bg_header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    color: #fff;
+    padding-top: 50px;
+}
+.header__wrap {
+}
+.logo__header {
+    margin-right: auto;
+    width: 100px;
+    height: 68px;
+}
+.header__menu {
+    display: flex;
     
+}
+.list__menu {
+    display: flex;
+    li {
+        padding: 10px;
+        margin-right: 5px;
+    }
+}
+.header__nav {
+}
+
+.booking {
+}
+.booking__wrap {
+    display: flex;
+}
+.contact {
 }
