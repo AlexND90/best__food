@@ -15,17 +15,17 @@
   \************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const sum = __webpack_require__(/*! ./module/sum.js */ \"./src/js/module/sum.js\");\r\nconsole.log(sum(10, 8));\r\nconsole.log(sum(5, 8));\n\n//# sourceURL=webpack://gulp__5/./src/js/main.js?");
+eval("const burger = __webpack_require__(/*! ./module/burger.js */ \"./src/js/module/burger.js\");\r\n\r\nburger.onclick = function() {\r\n    burger.classList.add('.burger__open')\r\n}\n\n//# sourceURL=webpack://gulp__5/./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/module/sum.js":
-/*!******************************!*\
-  !*** ./src/js/module/sum.js ***!
-  \******************************/
-/***/ (function(module) {
+/***/ "./src/js/module/burger.js":
+/*!*********************************!*\
+  !*** ./src/js/module/burger.js ***!
+  \*********************************/
+/***/ (function() {
 
-eval("module.exports = (a, b) => a + b;\n\n//# sourceURL=webpack://gulp__5/./src/js/module/sum.js?");
+eval("let burger = document.querySelector(\".burger\");\r\nlet menuHeader = document.querySelector(\".menu__header\")\r\n\r\nburger.onclick = function() {\r\n    burger.classList.toggle('burger__open');\r\n    menuHeader.classList.toggle('menu__active');\r\n    menuHeader.classList.toggle('menu__header');\r\n}\r\n\n\n//# sourceURL=webpack://gulp__5/./src/js/module/burger.js?");
 
 /***/ })
 

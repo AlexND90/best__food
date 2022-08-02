@@ -1,3 +1,5 @@
-const sum = require("./module/sum.js");
-console.log(sum(10, 8));
-console.log(sum(5, 8));
+const burger = require("./module/burger.js");
+
+burger.onclick = function() {
+    burger.classList.add('.burger__open')
+}

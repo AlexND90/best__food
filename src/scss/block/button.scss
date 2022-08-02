@@ -1,5 +1,8 @@
 $bt-page_color: #fff;
 $bt-page_bgcolor: #FF7400;
+$bt-page_hov__bgcolor: #c75c05;
+$bt-page_hov__color: #f3decc;
+
 
 button {
     border: none;
@@ -10,15 +13,31 @@ button {
 
 .bt {
     color: $bt-page_color;
-}
-.bt__nav {
-
+    transition: 0.5s;
 }
 
 .bt-page {
     background-color: $bt-page_bgcolor;
     padding: 15px 20px;
+    &:hover,:active,:focus{
+        background-color: $bt-page_hov__bgcolor;
+        color: $bt-page_hov__color;
+        transition: 0.5s;
+    }
 }
+
 .bt__view {
-    padding: 15px 28px;
+    width: 137px;
+    text-align: center;
+    @media (min-width: 768px) {
+        &::before{
+            content: "VIEW";
+            padding-right: 5px;
+        }
+    }
+}
+
+.bt__wrapper {
+    display: inline-flex;
+    align-items: center;
 }

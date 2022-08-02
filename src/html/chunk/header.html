@@ -1,25 +1,37 @@
 <header class="header header__block">
-    <div class="conteiner header__wrap">
+    <div class="conteiner">
         <div class="header__menu menu">
             <div class="logo logo__header">
                 <img src="img/icon/logo.svg" alt="">
             </div>
-            <nav class="header__nav nav">
-                <ul class="menu-list list__menu">
-                    <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="#">МЕНЮ</a></li>
-                    <li><a href="#">О НАС</a></li>
-                    <li><a href="#">БРОНЬ</a></li>
-                    <li><a href="#"><img src="img/icon/cart.svg" alt=""></a></li>
-                </ul>
-            </nav>
-            <div class="booking booking__wrap">
-                <div class="contact">
-                    <a href="tel:+9998887654"><img src="img/icon/phone.svg" alt="">+999-888-76-54</a>
-                    <p>Свяжитесь с нами для<br>  
-                        бронирования</p>
+            <div class="menu__burger-header visually-hidden">
+                <span class="burger"><span>
+            </div>
+            <div class="menu__header">
+                <nav class="header__nav nav">
+                    <ul class="menu-list list__menu">
+                        <li class="active"><a  href="index.html">ГЛАВНАЯ</a></li>
+                        <li><a href="#">МЕНЮ</a></li>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">БРОНЬ</a></li>
+                        <li><a href="#"><img src="img/icon/cart.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+                <div class="booking booking__wrap">
+                    <div class="contact">
+                        <a href="tel:+9998887654"><img src="img/icon/phone.svg" width="23px" alt=""><span class="number number-header">+999-888-76-54</span></a>
+                        <p>Свяжитесь с нами для<br>  
+                            бронирования</p>
+                    </div>
+                    <div class="bt__wrapper"><button class="bt bt__nav bt-page" type="button">ЗАКАЗ СТОЛИКА</button></div>
                 </div>
-                <div class="bt__wrapper"><button class="bt bt__nav bt-page" type="button">ЗАКАЗ СТОЛИКА</button></div>
+            </div>
+        </div>
+        <div class="welcome welcome__wrap">
+            <div class="wrap__welcome">
+                <p class="header__title">Добро пожаловать в <br><span class="header__title-big">Наш ресторан</span></p>
+                <h1 class="h1 h1__welcome">ДОМ ЛУЧШЕЙ ЕДЫ</h1>
+                <button type="button" class="bt bt-page bt__view ">MENU</button>
             </div>
         </div>
     </div>

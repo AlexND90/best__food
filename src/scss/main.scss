@@ -1,3 +1,6 @@
+p{
+  margin: 0;
+}
 html {
     box-sizing: border-box;
   }
@@ -14,19 +17,37 @@ body {
   box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+  text-decoration: none; 
+  &:link {
+    color: #fff;
+  }
+  &:visited {
+    color: #fff;
+  }
+  &:hover {
+    color: #bb743a;
+  }
+  &:active {
+    color: #995d2b;
+  }
 }
+
 .conteiner {
   margin: 0 auto;
-  max-width: 1130px;
+  max-width: 1110px;
   padding: 0 10px;
   width: 100%;
 }
-  
+ 
+@import "block/button.scss"; 
 @import "block/fonts.scss";
 @import "block/header.scss";
-@import "block/button.scss";
 
+
+
+
+ 
+  
 
 
 
