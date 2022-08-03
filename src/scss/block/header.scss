@@ -8,7 +8,9 @@
     color: #fff;
     padding-top: 45px;
     font-size: 14px;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
 
 .visually-hidden {
@@ -115,14 +117,13 @@
     }
     .contact {
         font-size: 18px;
-        margin-top: 35px;
+        margin-top: 40px;
         margin-bottom: 15px;
         a{
             font-size: 18px; 
         }
         p{
             text-align: center;
-            
         }
     }
 }
@@ -198,6 +199,10 @@
     display: flex;
 }
 .contact {
+    font-family: "Open Sans", sans-serif;
+    p {    
+        line-height: 19px;
+    }
     @media (max-width: 900px) {
         min-width: 140px;
         a {
@@ -245,7 +250,7 @@
 
 .header__title {
     font-size: 50px;
-    color: #D67E35;
+    font-family: "Tinosc", sans-serif;
     text-align: center;
     @media (max-width: 900px) {
         font-size: 40px;
@@ -254,8 +259,10 @@
         font-size: 30px;
     }
 }
+
 .header__title-big {
     font-size: 80px;
+    margin-bottom: 10px;
     @media (max-width: 900px) {
         font-size: 70px;
     }
@@ -264,6 +271,8 @@
     }
 }
 .h1 {
+    margin: 0;
+    padding: 5px;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -272,10 +281,11 @@
     }
 }
 .h1__welcome {
-    margin-bottom: 20px;
     position: relative;
+    margin-bottom: 20px;
     z-index: -2;
     @media (min-width: 768px) {
+        margin-left: 35px;
     &::after,&::before {
         content: "";
         width: 60px;
@@ -286,11 +296,11 @@
     }
     &::after {
         top: 50%;
-        right: -68px;
+        right: -65px;
     }
     &::before {
         top: 50%;
-        left: -68px;
+        left: -65px;
     }
 }
 }

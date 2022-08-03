@@ -1,5 +1,6 @@
 p{
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 html {
     box-sizing: border-box;
@@ -9,12 +10,19 @@ ul {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+}
 body {
   font-family: "Tinos";
   font-weight: 400;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  width: 100%;
+  background-color: #E5E5E5;
 }
 a {
   text-decoration: none; 
@@ -34,14 +42,18 @@ a {
 
 .conteiner {
   margin: 0 auto;
-  max-width: 1110px;
+  max-width: 1130px;
   padding: 0 10px;
   width: 100%;
+  
 }
- 
+.title_color{
+  color: #D67E35;
+}
 @import "block/button.scss"; 
 @import "block/fonts.scss";
 @import "block/header.scss";
+@import "block/history.scss";
 
 
 
