@@ -2,6 +2,8 @@ $bt-page_color: #fff;
 $bt-page_bgcolor: #FF7400;
 $bt-page_hov__bgcolor: #c75c05;
 $bt-page_hov__color: #f3decc;
+$btn_item: #D67E34;
+
 
 
 button {
@@ -40,4 +42,10 @@ button {
 .bt__wrapper {
     display: inline-flex;
     align-items: center;
+}
+.btn__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $btn_item;
+    font-size: 16px;
 }
