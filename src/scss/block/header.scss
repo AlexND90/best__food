@@ -84,6 +84,7 @@
     height: 100%;
     top: 0;
     right: 0;
+    transition: 0.3s;
     .header__nav::after { 
         content: "";
         height: 0;
@@ -153,8 +154,9 @@
 .menu__header{
     display: flex;
     align-items: center;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         position: absolute;
+        transition: 0.5s;
         width: 1px;
         height: 1px;
         margin: -1px;
@@ -164,17 +166,17 @@
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
-      }
+    }
 }
 .list__menu {
     display: flex;
     flex-wrap: wrap;
     li {
-        @media (max-width: 900px) {
-            padding: 10px 8px;
-        }
-        padding: 10px;
         margin-right: 5px;
+        padding: 10px 8px;
+        @media (max-width: 900px) {
+            padding: 10px 5px;
+        }
     }
 }
 .header__nav {
