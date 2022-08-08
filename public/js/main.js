@@ -15,7 +15,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 
-eval("const burger = __webpack_require__(/*! ./module/burger.js */ \"./src/js/module/burger.js\");\r\n\r\nburger.onclick = function() {\r\n    burger.classList.add('.burger__open')\r\n}\n\n//# sourceURL=webpack://gulp__5/./src/js/main.js?");
+eval("const burger = __webpack_require__(/*! ./module/burger.js */ \"./src/js/module/burger.js\");\r\nconst swiper = __webpack_require__(/*! ./module/sw.js */ \"./src/js/module/sw.js\");\r\n\r\nburger.onclick = function() {\r\n    burger.classList.add('.burger__open')\r\n}\n\n//# sourceURL=webpack://gulp__5/./src/js/main.js?");
 
 /***/ }),
 
@@ -26,6 +26,16 @@ eval("const burger = __webpack_require__(/*! ./module/burger.js */ \"./src/js/mo
 /***/ (function() {
 
 eval("let burger = document.querySelector(\".burger\");\r\nlet menuHeader = document.querySelector(\".menu__header\")\r\n\r\nburger.onclick = function() {\r\n    burger.classList.toggle('burger__open');\r\n    menuHeader.classList.toggle('menu__active');\r\n    menuHeader.classList.toggle('menu__header');\r\n}\r\n\n\n//# sourceURL=webpack://gulp__5/./src/js/module/burger.js?");
+
+/***/ }),
+
+/***/ "./src/js/module/sw.js":
+/*!*****************************!*\
+  !*** ./src/js/module/sw.js ***!
+  \*****************************/
+/***/ (function() {
+
+eval("\n\n//# sourceURL=webpack://gulp__5/./src/js/module/sw.js?");
 
 /***/ })
 

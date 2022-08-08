@@ -2,6 +2,9 @@ p{
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
+img {
+  vertical-align: top;
+}
 html {
     box-sizing: border-box;
   }
@@ -15,9 +18,11 @@ ul {
 }
 h2 {
   margin: 0;
+  font-weight: 400;
 }
 h3 {
   margin: 0;
+  font-weight: 400;
 }
 body {
   font-family: "Tinos";
@@ -58,9 +63,13 @@ a {
 @import "block/header.scss";
 @import "block/history.scss";
 @import "block/menu.scss";
+@import "block/gallery.scss";
 
-
-
+.footer {
+  background: url("../img/bg/bg_footer.jpg") 50% 50%/cover no-repeat;
+  background-color: #3a2310;
+  min-height: 732px;
+}
  
   
 

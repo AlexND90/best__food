@@ -9,6 +9,7 @@
     width: 100%;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
     align-content: stretch;
     z-index: 2;
     margin-top: -112px;
@@ -27,6 +28,7 @@
     font-size: 26px;
     box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    margin-bottom: 10px;
     img {
         margin-top: 35px;
     }
@@ -234,8 +236,8 @@
 //==============================================================================
 //offers
 .offers {
-    
     background: url("../img/bg/shadow.png"), url("../img/bg/bg_booking.png")0 0/cover no-repeat;
+    background-color: #110C09;
     min-height: 357px;
 }
 .offers-wrap {

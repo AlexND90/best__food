@@ -1,0 +1,139 @@
+.gallery-dishes {
+    padding: 100px 0;
+    background-color: #fff;
+    position: relative;
+    @media (max-width: 600px){
+        padding-bottom: 70px;
+    }
+}
+.decor__dishes {
+    @media (min-width: 600px){
+        &::after,&::before {
+            content: "";
+            width: 30px;
+            height: 100px;
+            position: absolute;
+            background-color: #FF0000;
+        }
+        &::after {
+            left: 0;
+            top: 222px;
+        }
+        &::before {
+            right: 0;
+            top: 222px;
+        }
+    }
+}
+.gallery-dishes__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+.dishes {
+}
+.dishes__wrap {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 1150px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media (max-width: 600px){
+        gap: 20px;
+    }
+}
+.dishes__title {
+    font-size: 54px;
+    margin-bottom: 60px;
+    @media (max-width: 600px){
+        font-size: 46px;
+        padding: 0 85px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+}
+.box-dishe__photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: 1150px){
+        justify-content: center;
+    }
+}
+.box-dishe-1 {
+   
+}
+.photo-big {
+    flex: 1 1 auto;
+    width: 540px;
+    height: 274px;
+    object-fit: cover;
+    @media (max-width: 600px){
+        flex: 1 1 100%;
+        justify-content: center;
+        max-width: 290px;
+        height: 274px;
+    }
+}
+.photo {
+    flex: 1 1 50%;
+    width: 253px;
+    height: 274px;
+    object-fit: cover;
+    @media (max-width: 600px){
+        flex: 1 1 100%;
+        justify-content: center;
+        width: 290px;
+        height: 274px;
+    }
+}
+
+.gallery-cook {
+    background-color: #fff;
+}
+.gallery-cook__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cooks {
+    
+}
+.cooks__title {
+    font-size: 54px;
+    margin-bottom: 105px;
+    @media (max-width: 576px){
+       text-align: center;
+       font-size: 40px;
+       margin-bottom: 80px;
+    }
+}
+.cooks__wrap {
+    display: flex;
+    overflow: hidden;
+    min-width: 100%;
+    gap: 30px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 576px){
+        margin-bottom: 20px;
+    }
+}
+.cooks__photo {
+    width: 350px;
+    height: 623px;
+    object-fit: cover;
+    @media (max-width: 576px){
+        width: 290px;
+        height: 380px;
+    }
+}
+
+
+
+
+
+
