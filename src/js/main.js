@@ -1,6 +1,9 @@
 const burger = require("./module/burger.js");
-const swiper = require("./module/sw.js");
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-burger.onclick = function() {
-    burger.classList.add('.burger__open')
-}

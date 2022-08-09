@@ -53,7 +53,7 @@
         max-height: 478px;
         height: 100%;
         margin: 0 auto 50px auto;
-        min-width: 320px;
+        min-width: 300px;
         max-width: 100%;
     }
 }
@@ -273,9 +273,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 100%;
     width: 100%; 
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 .photo__visitor {
     width: 100px;
@@ -314,26 +313,21 @@
 
 .slider__line {
     display: flex;
-    overflow: hidden;
+    //overflow: hidden;
     position: relative;
 }
 .btn-slider {
     display: flex;
     justify-content: center;
 }
-.btn-slider__wrap-reviews {
-    position: absolute;
-    bottom: 107px;
-    left: 50%;
-    margin-left: -12px;
-}
-.slider-btn {
-    margin: 0 2px;
-    width: 5px;
-    height: 5px;
+span.swiper-pagination-bullet  {
+    margin: 0 4px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background-color: #C4C4C4;
+    background-color: #4d4c4c;
 }
-.active__slide {
+span.swiper-pagination-bullet-active {
     border: 1px solid #FF7400;
+    background-color: #C4C4C4;
 } 
